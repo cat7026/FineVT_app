@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 자재 위치 텍스트 -->
+
+    <!-- 표 (2행 2열) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 자재 위치 텍스트 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="자재 위치"
+            android:textSize="30sp"/>
+        <!--        android:paddingLeft="10dp"-->
+
+        <!-- 이미지 뷰 -->
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 첫 번째 셀 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="셀 1"
+            android:textSize="20sp" />
+
+        <!-- 두 번째 셀 -->
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="셀 2"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 세 번째 셀 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="셀 3"
+            android:textSize="20sp" />
+
+        <!-- 네 번째 셀 -->
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="셀 4"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 검색 박스 -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 검색 입력란 -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="검색어를 입력하세요" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="439dp"></LinearLayout>
+
+    <!-- 검색 버튼 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="검색"
+        android:id="@+id/search_btn"/>
+</LinearLayout>
