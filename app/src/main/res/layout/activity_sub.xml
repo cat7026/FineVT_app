@@ -162,5 +162,5 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:text="RFID" />
+        android:text="RFID-2023/10/24" />
 </LinearLayout>
